@@ -22,14 +22,11 @@ namespace WaitForIt
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Event> Events;
-
         public MainWindow()
         {
-            Events = new ObservableCollection<Event>();
-            Events.Add(new Event("New Year's Eve", "12/31/2015"));
+            new Event("New Year's Eve", "12/31/2015");
             InitializeComponent();
-            CountdownList.DataContext = Events;
+            CountdownList.DataContext = Event.Events;
         }
     }
 }

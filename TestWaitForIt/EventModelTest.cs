@@ -8,6 +8,13 @@ namespace TestWaitForIt
     public class EventModelTest
     {
         [TestMethod]
+        public void CreatingAnEventStoresItInEvents()
+        {
+            Event valentines = new Event("Valentine's", "02/14/14");
+            CollectionAssert.Contains(Event.Events, valentines);
+        }
+
+        [TestMethod]
         public void CreatingAnEventStoresItsProperties()
         {
             Event valentines = new Event("Valentine's", "02/14/14");

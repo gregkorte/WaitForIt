@@ -8,9 +8,13 @@ namespace WaitForIt.Model
 {
     public class Event
     {
+        public string Date;
+        public string Name;
+
         public Event(string EventName, string EventDate)
         {
-            throw new NotImplementedException();
+            this.Name = EventName;
+            this.Date = EventDate;
         }
     }
 }

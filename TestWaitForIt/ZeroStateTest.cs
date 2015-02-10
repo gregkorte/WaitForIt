@@ -14,6 +14,7 @@ namespace TestWaitForIt
     public class ZeroStateTest
     {
 
+
         private static TestContext test_context;
         private static Window window;
         private static Application application;

@@ -33,7 +33,8 @@ namespace WaitForIt
                 _dbContext.Events.Add(new Event("Birthday", "12/25/2015"));
                 //Events = new ObservableCollection<Event>():
             }
-            InitializeComponent(); CountdownList.DataContext = _dbContext.Events.Local;
+            InitializeComponent(); 
+            CountdownList.DataContext = _dbContext.Events.Local;
         }
     }
 }

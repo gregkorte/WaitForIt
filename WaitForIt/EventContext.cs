@@ -10,6 +10,6 @@ namespace WaitForIt
 {
     class EventContext : DbContext
     {
-        DbSet<Event> Events { get; set; }
+        public DbSet<Event> Events { get; set; }
     }
 }

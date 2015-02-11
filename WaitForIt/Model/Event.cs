@@ -9,7 +9,7 @@ namespace WaitForIt.Model
 {
     public class Event
     {
-        public int EventId { get; set }
+        public int EventId { get; set; }
         public string Date { get; set; }
         public string Name { get; set; }
 
